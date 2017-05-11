@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="redisClientWrapper" class="com.my.example.dashboard.common.redis.RedisClientWrapper" init-method="init">
+        <property name="servers" value="${redis.servers}"/>
+        <property name="redisConfig" ref="redisConfig"/>
+    </bean>
+
+    <bean id="redisConfig" class="com.my.example.dashboard.common.redis.RedisConfig">
+        <property name="maxIdle" value="100"/>
+        <property name="minIdle" value="5"/>
+        <property name="maxTotal" value="1000"/>
+        <property name="maxWaitMillis" value="5000"/>
+        <property name="testWhileIdle" value="true"/>
+        <property name="timeBetweenEvictionRunsMillis" value="60000"/>
+        <property name="minEvictableIdleTimeMillis" value="60000"/>
+    </bean>
+
+    <bean id="redisQueue" class="com.my.example.dashboard.common.redis.RedisQueue">
+        <property name="redisClientWrapper" ref="redisClientWrapper"/>
+    </bean>
+
+</beans>

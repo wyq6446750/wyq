@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="mongoManager" class="com.my.example.dashboard.common.mongo.MongoManager" init-method="init">
+        <property name="host" value="localhost"/>
+        <property name="port" value="27017"/>
+        <property name="mongoOptions" ref="mongoOptions"/>
+    </bean>
+
+    <bean id="mongoOptions" class="com.my.example.dashboard.common.mongo.MongoOptions">
+        <property name="connectionsPerHost" value="100"/>
+        <property name="connectTimeout" value="1200000"/>
+        <property name="maxWaitTime" value="3000"/>
+        <property name="threadsAllowedToBlockForConnectionMultiplier" value="100"/>
+    </bean>
+
+</beans>
