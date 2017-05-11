@@ -9,7 +9,7 @@ import java.util.Date;
  * Date:17/2/7
  * Time:下午6:25
  *
- * @author yongquan.wen@corp.elong.com
+ * @author yongquan.wen
  */
 public class DateUtils {
 

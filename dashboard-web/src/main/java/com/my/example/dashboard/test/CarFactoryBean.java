@@ -6,7 +6,7 @@ import org.springframework.beans.factory.FactoryBean;
  * Date:17/3/29
  * Time:下午5:36
  *
- * @author yongquan.wen@corp.elong.com
+ * @author yongquan.wen
  */
 public class CarFactoryBean implements FactoryBean<Car> {
 

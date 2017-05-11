@@ -17,7 +17,7 @@ import java.util.concurrent.atomic.AtomicInteger;
  *
  * Redis工具类
  *
- * @author yongquan.wen@corp.elong.com
+ * @author yongquan.wen
  */
 public class RedisClientWrapper {
 

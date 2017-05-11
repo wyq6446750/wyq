@@ -11,7 +11,7 @@ import javax.servlet.http.HttpServletResponse;
  * Date:17/2/3
  * Time:下午3:18
  *
- * @author yongquan.wen@corp.elong.com
+ * @author yongquan.wen
  */
 public class LoginCheckInterceptor extends HandlerInterceptorAdapter {
 

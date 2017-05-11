@@ -4,7 +4,7 @@ package com.my.example.dashboard.model.config;
  * Date:17/2/3
  * Time:下午2:41
  *
- * @author yongquan.wen@corp.elong.com
+ * @author yongquan.wen
  */
 public class Configs {
 

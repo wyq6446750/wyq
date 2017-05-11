@@ -6,7 +6,7 @@ import com.mongodb.MongoClientOptions;
  * Date:17/3/30
  * Time:下午6:14
  *
- * @author yongquan.wen@corp.elong.com
+ * @author yongquan.wen
  */
 public class MongoOptions extends MongoClientOptions.Builder {
 

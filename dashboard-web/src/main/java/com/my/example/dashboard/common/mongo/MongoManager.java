@@ -12,7 +12,7 @@ import org.slf4j.LoggerFactory;
  * Date:17/3/30
  * Time:下午6:06
  *
- * @author yongquan.wen@corp.elong.com
+ * @author yongquan.wen
  */
 public class MongoManager {
 

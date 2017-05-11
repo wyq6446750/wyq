@@ -9,7 +9,7 @@ import org.apache.commons.lang3.StringUtils;
  * <p/>
  * Redis分布式队列，同时提供文本压缩gzip
  *
- * @author yongquan.wen@corp.elong.com
+ * @author yongquan.wen
  */
 public class RedisQueue {
 

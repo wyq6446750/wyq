@@ -6,7 +6,7 @@ import java.util.List;
  * Date:17/2/4
  * Time:下午4:11
  *
- * @author yongquan.wen@corp.elong.com
+ * @author yongquan.wen
  */
 public class Pager<T> {
 

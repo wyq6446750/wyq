@@ -18,7 +18,7 @@ import java.util.List;
  * Date:17/2/4
  * Time:下午3:35
  *
- * @author yongquan.wen@corp.elong.com
+ * @author yongquan.wen
  */
 @Controller
 @RequestMapping("/test")

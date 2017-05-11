@@ -10,32 +10,32 @@
         </commentGenerator>
         <!--数据库链接URL，用户名、密码 -->
         <jdbcConnection driverClass="com.mysql.jdbc.Driver"
-                        connectionURL="jdbc:mysql://192.168.83.15:6071/pb_promotion_all" userId="test"
-                        password="nopass.2">
+                        connectionURL="jdbc:mysql://localhost:3306/test" userId="root"
+                        password="root">
         </jdbcConnection>
         <javaTypeResolver>
             <property name="forceBigDecimals" value="false"/>
         </javaTypeResolver>
         <!-- 生成模型的包名和位置 -->
         <javaModelGenerator targetPackage="com.my.example.dashboard.model.domain"
-                            targetProject="/Users/user/Documents/elong_git/promotion/promotion-dashboard/dashboard-model/src/main/java">
+                            targetProject="/Users/user/Documents/dashboard/dashboard-model/src/main/java">
             <property name="enableSubPackages" value="true"/>
             <property name="trimStrings" value="true"/>
         </javaModelGenerator>
         <!-- 生成映射文件的包名和位置 -->
         <sqlMapGenerator targetPackage="mysql"
-                         targetProject="/Users/user/Documents/elong_git/promotion/promotion-dashboard/dashboard-web/src/main/resources/conf/mybatis">
+                         targetProject="/Users/user/Documents/dashboard/dashboard-web/src/main/resources/conf/mybatis">
             <property name="enableSubPackages" value="true"/>
         </sqlMapGenerator>
         <!-- 生成DAO的包名和位置 -->
         <javaClientGenerator type="XMLMAPPER" targetPackage="com.my.example.dashboard.service.dao.mysql"
-                             targetProject="/Users/user/Documents/elong_git/promotion/promotion-dashboard/dashboard-web/src/main/java">
+                             targetProject="/Users/user/Documents/dashboard/dashboard-web/src/main/java">
             <property name="enableSubPackages" value="true"/>
         </javaClientGenerator>
 
-        <table tableName="promotion_product_info_log" domainObjectName="PromotionProductInfoLog"
+        <table tableName="table_name" domainObjectName="DomainObjectName"
                enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false"
-               enableSelectByExample="true" selectByExampleQueryId="true">
+               enableSelectByExample="false" selectByExampleQueryId="false">
             <ignoreColumn column="_timestamp"/>
         </table>
     </context>

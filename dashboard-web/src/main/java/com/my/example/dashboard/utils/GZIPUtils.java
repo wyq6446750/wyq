@@ -14,7 +14,7 @@ import java.util.zip.*;
  * Date:17/3/30
  * Time:下午4:10
  *
- * @author yongquan.wen@corp.elong.com
+ * @author yongquan.wen
  */
 public class GZIPUtils {
 

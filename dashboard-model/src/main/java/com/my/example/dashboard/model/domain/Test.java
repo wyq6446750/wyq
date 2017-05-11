@@ -6,7 +6,7 @@ import java.util.Date;
  * Date:17/2/3
  * Time:下午2:40
  *
- * @author yongquan.wen@corp.elong.com
+ * @author yongquan.wen
  */
 public class Test {
 

@@ -4,7 +4,7 @@ package com.my.example.dashboard.test;
  * Date:17/3/29
  * Time:下午5:33
  *
- * @author yongquan.wen@corp.elong.com
+ * @author yongquan.wen
  */
 public class Car {
 
