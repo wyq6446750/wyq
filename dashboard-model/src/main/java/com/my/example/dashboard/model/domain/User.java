@@ -8,11 +8,13 @@ import java.util.Date;
  *
  * @author yongquan.wen
  */
-public class Test {
+public class User {
 
     private Long id;
 
-    private String name;
+    private String englishName;
+
+    private String chinaName;
 
     private Integer age;
 
@@ -26,12 +28,20 @@ public class Test {
         this.id = id;
     }
 
-    public String getName() {
-        return name;
+    public String getEnglishName() {
+        return englishName;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setEnglishName(String englishName) {
+        this.englishName = englishName;
+    }
+
+    public String getChinaName() {
+        return chinaName;
+    }
+
+    public void setChinaName(String chinaName) {
+        this.chinaName = chinaName;
     }
 
     public Integer getAge() {

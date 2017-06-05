@@ -4,7 +4,7 @@
 <div class="row">
     <div class="col-md-12">
         <div class="box box-primary" style="margin-bottom:10px;">
-            <form action="/test/search" id="coupon-search-form" method="post" autocomplete="off">
+            <form action="/user/search" id="search-form" method="post" autocomplete="off">
                 <div class="box-body">
                     <table>
                         <tr>
@@ -15,13 +15,19 @@
                                 <input type="text" class="form-control" name="id">
                             </td>
                             <td class="text-right" width="6%">
-                                <span style="padding-right:5px;">name</span>
+                                <span style="padding-right:5px;">englishName:</span>
                             </td>
                             <td width="9%">
-                                <input type="text" class="form-control" name="name">
+                                <input type="text" class="form-control" name="englishName">
                             </td>
                             <td class="text-right" width="6%">
-                                <span style="padding-right:5px;">age</span>
+                                <span style="padding-right:5px;">chinaName:</span>
+                            </td>
+                            <td width="9%">
+                                <input type="text" class="form-control" name="chinaName">
+                            </td>
+                            <td class="text-right" width="6%">
+                                <span style="padding-right:5px;">age:</span>
                             </td>
                             <td width="9%">
                                 <input type="text" class="form-control" name="age">
@@ -34,15 +40,15 @@
                 </div>
             </form>
         </div>
-        <div id="coupon-list-datas" class="box no-margin">
-            <#include "coupon-list.ftl" />
+        <div id="list-data" class="box no-margin">
+            <#include "list.ftl" />
         </div>
     </div>
 </div>
 <script type="text/javascript">
-    $(document).delegate("#coupon-search-form", "submit", function(e) {
+    $(document).delegate("#search-form", "submit", function(e) {
         e.preventDefault;
-        searchList('/test/search?ajax=true');
+        searchList('/user/search?ajax=true');
         return false;
     });
 
@@ -57,9 +63,9 @@
         $.ajax({
             type: 'post',
             url: url,
-            data: $("#coupon-search-form").serialize(),
+            data: $("#search-form").serialize(),
             success: function(data) {
-                $('#coupon-list-datas').html(data);
+                $('#list-data').html(data);
                 $.isLoading("hide");
             }
         });

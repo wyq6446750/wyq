@@ -21,13 +21,13 @@ public class DashboardController {
     @RequestMapping(value = "/login-out")
     public void loginOut(HttpServletRequest request, HttpServletResponse response) throws IOException {
 //        WebUtils.setSessionAttribute(request, "user", null);
-//        Cookie cookie = WebUtils.getCookie(request, "utoken");
-//        if (cookie != null) {
-//            cookie.setMaxAge(0);
-//            cookie.setValue(null);
-//            cookie.setPath("/");
-//            response.addCookie(cookie);
-//        }
-//        response.sendRedirect("/");
+        Cookie cookie = WebUtils.getCookie(request, "utoken");
+        if (cookie != null) {
+            cookie.setMaxAge(0);
+            cookie.setValue(null);
+            cookie.setPath("/");
+            response.addCookie(cookie);
+        }
+        response.sendRedirect("/");
     }
 }

@@ -6,7 +6,7 @@
         var home = $('.treeview-menu li:first').find('a').attr('href');
         $.each(lis, function () {
             var href = $(this).find('a').attr('href');
-            if(href == '/test/search'){
+            if(href == '/user/search'){
                 home = href;
                 return;
             }
