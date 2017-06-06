@@ -4,8 +4,8 @@
         <thead>
         <tr class="info">
             <th class="text-center" width="5%">id</th>
-            <th class="text-center">englishName</th>
-            <th class="text-center">chinaName</th>
+            <th class="text-center">userName</th>
+            <th class="text-center">realName</th>
             <th class="text-center">age</th>
         </tr>
         </thead>
@@ -17,10 +17,10 @@
                 ${user.id!}
                 </td>
                 <td class="text-center">
-                ${user.englishName!}
+                ${user.userName!}
                 </td>
                 <td class="text-center">
-                ${user.chinaName!}
+                ${user.realName!}
                 </td>
                 <td class="text-center">
                 ${user.age!}

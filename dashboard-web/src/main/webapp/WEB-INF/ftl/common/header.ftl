@@ -13,7 +13,12 @@
                     <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
                         <img src="/asset/img/avatar.png" class="user-image" alt="">
                         <#--用户名-->
-                        <span class="hidden-xs">用户名</span>
+                        <span class="hidden-xs">
+                        <#if Session.user??>
+                            ${Session.user.realName!}
+                        <#else>用户名
+                        </#if>
+                        </span>
                         <span class="caret"></span>
                     </a>
                     <ul class="dropdown-menu" style="width:auto;">

@@ -3,16 +3,47 @@
 <mapper namespace="com.my.example.dashboard.service.dao.mysql.UserDAO">
     <resultMap id="BaseResultMap" type="com.my.example.dashboard.model.domain.User">
         <id column="id" property="id"/>
-        <result column="english_name" property="englishName"/>
-        <result column="china_name" property="chinaName"/>
+        <result column="user_name" property="userName"/>
+        <result column="real_name" property="realName"/>
+        <result column="password" property="password"/>
         <result column="age" property="age"/>
         <result column="_timestamp" property="timestamp"/>
     </resultMap>
     <sql id="Base_Column_List">
-        id, english_name, china_name, age, _timestamp
+        id, user_name, real_name, password, age, _timestamp
     </sql>
 
     <select id="selectAll" resultMap="BaseResultMap">
-        SELECT <include refid="Base_Column_List"/> FROM user
+        SELECT
+        <include refid="Base_Column_List"/>
+        FROM user
     </select>
+
+    <select id="select" parameterType="com.my.example.dashboard.model.domain.User"
+            resultMap="BaseResultMap">
+        SELECT
+        <include refid="Base_Column_List"/>
+        FROM user
+        <include refid="where_condition"/>
+    </select>
+
+    <sql id="where_condition">
+        <where>
+            <if test="id != null">
+                AND id = ${id}
+            </if>
+            <if test="userName != null and userName != ''">
+                AND user_name = #{userName}
+            </if>
+            <if test="realName != null and realName != ''">
+                AND real_name = #{realName}
+            </if>
+            <if test="password != null and password != ''">
+                AND password = #{password}
+            </if>
+            <if test="age != null">
+                AND age = #{age}
+            </if>
+        </where>
+    </sql>
 </mapper>

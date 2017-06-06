@@ -15,19 +15,19 @@
                                 <input type="text" class="form-control" name="id">
                             </td>
                             <td class="text-right" width="6%">
-                                <span style="padding-right:5px;">englishName:</span>
+                                <span style="padding-right:5px;padding-left:10px;">userName:</span>
                             </td>
                             <td width="9%">
-                                <input type="text" class="form-control" name="englishName">
+                                <input type="text" class="form-control" name="userName">
                             </td>
                             <td class="text-right" width="6%">
-                                <span style="padding-right:5px;">chinaName:</span>
+                                <span style="padding-right:5px;padding-left:10px;">realName:</span>
                             </td>
                             <td width="9%">
-                                <input type="text" class="form-control" name="chinaName">
+                                <input type="text" class="form-control" name="realName">
                             </td>
                             <td class="text-right" width="6%">
-                                <span style="padding-right:5px;">age:</span>
+                                <span style="padding-right:5px;padding-left:10px;">age:</span>
                             </td>
                             <td width="9%">
                                 <input type="text" class="form-control" name="age">

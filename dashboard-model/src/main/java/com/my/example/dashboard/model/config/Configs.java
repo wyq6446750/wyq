@@ -13,4 +13,9 @@ public class Configs {
      */
     public final static String SESSION_USER_ATTR = "user";
 
+    /**
+     * Cookie名称
+     */
+    public final static String COOKIE_NAME = "utoken";
+
 }

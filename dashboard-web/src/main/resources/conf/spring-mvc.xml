@@ -20,6 +20,9 @@
         <mvc:interceptor>
             <mvc:mapping path="/**"/>
             <mvc:exclude-mapping path="/asset/**"/>
+            <mvc:exclude-mapping path="/user/login"/>
+            <mvc:exclude-mapping path="/user/check"/>
+            <mvc:exclude-mapping path="/"/>
             <bean class="com.my.example.dashboard.interceptor.LoginCheckInterceptor"/>
         </mvc:interceptor>
     </mvc:interceptors>

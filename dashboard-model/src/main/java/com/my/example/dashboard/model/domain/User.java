@@ -12,9 +12,11 @@ public class User {
 
     private Long id;
 
-    private String englishName;
+    private String userName;
 
-    private String chinaName;
+    private String realName;
+
+    private String password;
 
     private Integer age;
 
@@ -28,20 +30,28 @@ public class User {
         this.id = id;
     }
 
-    public String getEnglishName() {
-        return englishName;
+    public String getUserName() {
+        return userName;
     }
 
-    public void setEnglishName(String englishName) {
-        this.englishName = englishName;
+    public void setUserName(String userName) {
+        this.userName = userName;
     }
 
-    public String getChinaName() {
-        return chinaName;
+    public String getRealName() {
+        return realName;
     }
 
-    public void setChinaName(String chinaName) {
-        this.chinaName = chinaName;
+    public void setRealName(String realName) {
+        this.realName = realName;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
     }
 
     public Integer getAge() {
